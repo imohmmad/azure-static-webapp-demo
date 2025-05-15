@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BeyondCorp Test WebApp-2</title>
+  <style>
+    :root {
+      --primary: #4CAF50;
+      --dark: #333;
+      --light: #f4f4f4;
+      --accent: #ffffff;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      background-color: var(--light);
+      color: var(--dark);
+    }
+
+    header {
+      background: var(--primary);
+      color: var(--accent);
+      padding: 1rem 2rem;
+      text-align: center;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin-top: 1rem;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #cce7cc;
+    }
+
+    .hero {
+      background: url('https://picsum.photos/id/1015/1600/600') center/cover no-repeat;
+      color: white;
+      padding: 5rem 2rem;
+      text-align: center;
+    }
+
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+    }
+
+    .hero p {
+      font-size: 1.2rem;
+      margin-bottom: 2rem;
+    }
+
+    .hero button {
+      background: white;
+      color: var(--primary);
+      border: none;
+      padding: 1rem 2rem;
+      font-size: 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    .hero button:hover {
+      background: #e7fbe7;
+    }
+
+    .content {
+      max-width: 1200px;
+      margin: auto;
+      padding: 2rem;
+    }
+
+    .section {
+      margin-bottom: 3rem;
+    }
+
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .card {
+      background: white;
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .card img {
+      max-width: 100%;
+      border-radius: 5px;
+    }
+
+    .card h3 {
+      margin-top: 0.5rem;
+    }
+
+    .card p {
+      font-size: 0.9rem;
+      color: #555;
+    }
+
+    footer {
+      background: #222;
+      color: #ccc;
+      text-align: center;
+      padding: 2rem 1rem;
+      margin-top: 2rem;
+    }
+
+    @media (max-width: 600px) {
+      .hero h1 {
+        font-size: 2rem;
+      }
+
+      .hero p {
+        font-size: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>My Awesome Website</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <h1>Greeting From BeyondCorp team</h1>
+    <p>Designing modern simple and elegant ways to bring Private resource close to user without VPN</p>
+    <button>Get Started</button>
+  </div>
+
+  <div class="content">
+    <section class="section">
+      <h2>About Us</h2>
+      <p>We are focusing on building responsive, and efficient way to access Corporate resoirces in Secure manner.</p>
+    </section>
+
+    <section class="section">
+      <h2>Our Services</h2>
+      <div class="cards">
+        <div class="card">
+          <img src="https://picsum.photos/300/200?random=1" alt="Service 1" />
+          <h3>Web</h3>
+          <p>Secure Internet Acess From Anywhere.</p>
+        </div>
+        <div class="card">
+          <img src="https://picsum.photos/300/200?random=2" alt="Service 2" />
+          <h3>Private</h3>
+          <p>Modern, high-performance Private Access-ZTNA</p>
+        </div>
+        <div class="card">
+          <img src="https://picsum.photos/300/200?random=3" alt="Service 3" />
+          <h3>SSE</h3>
+          <p>Improve visibility and unform access globally.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2>Get in Touch</h2>
+      <p>If you'd like to learn more about this please contact Nolen, just click the button below and we’ll get back to you!</p>
+      <button>Contact Us</button>
+    </section>
+  </div>
+
+  <footer>
+    <p>&copy; WMPRIVATE. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
