@@ -3,190 +3,108 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>BeyondCorp Test WebApp-2</title>
+  <title>Test Website</title>
   <style>
-    :root {
-      --primary: #4CAF50;
-      --dark: #333;
-      --light: #f4f4f4;
-      --accent: #ffffff;
+    /* Reset some basic elements */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
     }
 
     body {
-      margin: 0;
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f4f4f9;
+      color: #333;
       line-height: 1.6;
-      background-color: var(--light);
-      color: var(--dark);
     }
 
     header {
-      background: var(--primary);
-      color: var(--accent);
-      padding: 1rem 2rem;
+      background-color: #4a90e2;
+      color: white;
+      padding: 20px 0;
       text-align: center;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     }
 
     nav {
+      background: #333;
+      color: white;
       display: flex;
       justify-content: center;
-      gap: 1rem;
-      margin-top: 1rem;
     }
 
     nav a {
       color: white;
+      padding: 15px 20px;
       text-decoration: none;
-      font-weight: bold;
-      transition: color 0.3s;
+      display: inline-block;
     }
 
     nav a:hover {
-      color: #cce7cc;
+      background: #575757;
     }
 
-    .hero {
-      background: url('https://picsum.photos/id/1015/1600/600') center/cover no-repeat;
-      color: white;
-      padding: 5rem 2rem;
-      text-align: center;
-    }
-
-    .hero h1 {
-      font-size: 3rem;
-      margin-bottom: 1rem;
-    }
-
-    .hero p {
-      font-size: 1.2rem;
-      margin-bottom: 2rem;
-    }
-
-    .hero button {
-      background: white;
-      color: var(--primary);
-      border: none;
-      padding: 1rem 2rem;
-      font-size: 1rem;
-      border-radius: 5px;
-      cursor: pointer;
-      transition: background 0.3s;
-    }
-
-    .hero button:hover {
-      background: #e7fbe7;
-    }
-
-    .content {
-      max-width: 1200px;
+    .container {
+      padding: 40px 20px;
+      max-width: 900px;
       margin: auto;
-      padding: 2rem;
     }
 
-    .section {
-      margin-bottom: 3rem;
+    h1, h2 {
+      color: #4a4a4a;
     }
 
-    .cards {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 1.5rem;
+    footer {
+      background-color: #4a90e2;
+      color: white;
+      text-align: center;
+      padding: 15px 0;
+      margin-top: 40px;
     }
 
     .card {
       background: white;
-      padding: 1rem;
       border-radius: 8px;
       box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-    }
-
-    .card img {
-      max-width: 100%;
-      border-radius: 5px;
-    }
-
-    .card h3 {
-      margin-top: 0.5rem;
-    }
-
-    .card p {
-      font-size: 0.9rem;
-      color: #555;
-    }
-
-    footer {
-      background: #222;
-      color: #ccc;
-      text-align: center;
-      padding: 2rem 1rem;
-      margin-top: 2rem;
-    }
-
-    @media (max-width: 600px) {
-      .hero h1 {
-        font-size: 2rem;
-      }
-
-      .hero p {
-        font-size: 1rem;
-      }
+      padding: 20px;
+      margin: 20px 0;
     }
   </style>
 </head>
 <body>
 
   <header>
-    <h1>My Awesome Website</h1>
-    <nav>
-      <a href="#">Home</a>
-      <a href="#">About</a>
-      <a href="#">Services</a>
-      <a href="#">Contact</a>
-    </nav>
+    <h1>Welcome to Test Website</h1>
+    <p>Your simple and clean test page</p>
   </header>
 
-  <div class="hero">
-    <h1>Greeting From BeyondCorp team</h1>
-    <p>Designing modern simple and elegant ways to bring Private resource close to user without VPN</p>
-    <button>Get Started</button>
-  </div>
+  <nav>
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Contact</a>
+  </nav>
 
-  <div class="content">
-    <section class="section">
-      <h2>About Us</h2>
-      <p>We are focusing on building responsive, and efficient way to access Corporate resoirces in Secure manner.</p>
+  <div class="container">
+    <section class="card">
+      <h2>About This Site</h2>
+      <p>This is a static HTML page built for testing and demonstration purposes. It includes a responsive layout and modern design with clean CSS styling.</p>
     </section>
 
-    <section class="section">
-      <h2>Our Services</h2>
-      <div class="cards">
-        <div class="card">
-          <img src="https://picsum.photos/300/200?random=1" alt="Service 1" />
-          <h3>Web</h3>
-          <p>Secure Internet Acess From Anywhere.</p>
-        </div>
-        <div class="card">
-          <img src="https://picsum.photos/300/200?random=2" alt="Service 2" />
-          <h3>Private</h3>
-          <p>Modern, high-performance Private Access-ZTNA</p>
-        </div>
-        <div class="card">
-          <img src="https://picsum.photos/300/200?random=3" alt="Service 3" />
-          <h3>SSE</h3>
-          <p>Improve visibility and unform access globally.</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="section">
-      <h2>Get in Touch</h2>
-      <p>If you'd like to learn more about this please contact Nolen, just click the button below and we’ll get back to you!</p>
-      <button>Contact Us</button>
+    <section class="card">
+      <h2>Features</h2>
+      <ul>
+        <li>Responsive layout</li>
+        <li>Clean and modern UI</li>
+        <li>No external dependencies</li>
+        <li>Easy to customize</li>
+      </ul>
     </section>
   </div>
 
   <footer>
-    <p>&copy; WMPRIVATE. All rights reserved.</p>
+    <p>&copy; Test Website. All rights reserved.</p>
   </footer>
 
 </body>
